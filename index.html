@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>Battleship game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="aiBehaviour.js" defer></script>
+    <script src="guessing.js" defer></script>
+  </head>
+  <body>
+    <div class="ai_area">
+      <h3 class="grid_name ai_grid_name">AI GRID</h3>
+      <div class="grid ai_grid"></div>
+      <button class="do_ai">Generate AI guess</button>
+    </div>
+    <div class="player_area">
+      <h2 class="result_info"></h2>
+      <h3 class="grid_name player_grid_name">PLAYER GRID</h3>
+      <div class="grid player_grid"></div>
+    </div>
+    <div class="player_ships_info">
+      <h3>PLAYER FLEET</h3>
+      <table>
+        <tr>
+          <td>#</td>
+          <td>Ship</td>
+          <td>Size</td>
+        </tr>
+        <tr>
+          <td><button class="table_button ac">1x</button></td>
+          <td>Aircraft Carrier</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td><button class="table_button bat">1x</button></td>
+          <td>Battleship</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td><button class="table_button cru">1x</button></td>
+          <td>Cruiser</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td><button class="table_button des">2x</button></td>
+          <td>Destroyer</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td><button class="table_button sub">2x</button></td>
+          <td>Submarine</td>
+          <td>1</td>
+        </tr>
+
+        <tr>
+          <td>-Place all your ships</td>
+          <td>-Scroll wheel and move to rotate</td>
+          <td>-Right click to mark</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
